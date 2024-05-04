@@ -15,13 +15,16 @@ def main():
     st.markdown("<h2 style='text-align: center;'>Because You Deserve a Daily Dose of Encouragement!</h2>", unsafe_allow_html=True)
     st.write("Click the button below to receive a compliment!")
 
-    # Center-aligning buttons
+    # Center-aligning button container
     st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
 
     # Button to generate compliment
     if st.button("Generate Compliment"):
         compliment = generate_compliment()
         st.write(f"🌟 {compliment}")
+
+    # Close button alignment container
+    st.markdown("</div>", unsafe_allow_html=True)
 
     # Separator
     st.markdown("---")
@@ -39,9 +42,6 @@ def main():
         # Save user sign-up data to database (placeholder)
         save_to_database(name, email)
         st.success("You've successfully signed up for daily compliments!")
-
-    # Close button alignment container
-    st.markdown("</div>", unsafe_allow_html=True)
 
     # Built by information
     st.markdown("<h4 style='text-align: center; font-size: small;'>Built by <a href='https://www.linkedin.com/in/harshal-panchal/' target='_blank'>Harshal Panchal</a></h4>", unsafe_allow_html=True)
