@@ -40,7 +40,7 @@ def main():
         compliment = generate_compliment()
         st.write(f"🌟 {compliment}")
 
-  st.markdown("<h3 style='text-align: center;'>Built by <a href='https://www.linkedin.com/in/harshal-panchal/' target='_blank'>Harshal Panchal</a></h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>Built by <a href='https://www.linkedin.com/in/harshal-panchal/' target='_blank'>Harshal Panchal</a></h3>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
