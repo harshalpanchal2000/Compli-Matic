@@ -10,9 +10,6 @@ def main():
         layout="wide"
     )
 
-    # Separator
-    st.markdown("---")
-
     # Title and description for generating compliments
     st.title("Compli-Matic 🌟")
     st.subheader("Because You Deserve a Daily Dose of Encouragement!")
@@ -22,13 +19,14 @@ def main():
     if st.button("Generate Compliment"):
         compliment = generate_compliment()
         st.write(f"🌟 {compliment}")
- # Title and description for sign-up
-    st.title("Sign up for Daily Compliments")
-    st.write("Enter your name and email address to receive daily compliments!")
 
-    # User input fields for sign-up
-    name = st.text_input("Name")
-    email = st.text_input("Email")
+    # Title and description for sign-up
+st.markdown("<h2 style='font-size: 24px;'>Sign up for Daily Compliments</h2>", unsafe_allow_html=True)
+st.markdown("<p style='font-size: 16px;'>Enter your name and email address to receive daily compliments!</p>", unsafe_allow_html=True)
+
+# User input fields for sign-up
+name = st.text_input("Name")
+email = st.text_input("Email")
 
     # Sign-up button
     if st.button("Sign Up"):
