@@ -10,7 +10,19 @@ def main():
         layout="wide"
     )
 
-    # Title and description for sign-up
+    # Separator
+    st.markdown("---")
+
+    # Title and description for generating compliments
+    st.title("Compli-Matic 🌟")
+    st.subheader("Because You Deserve a Daily Dose of Encouragement!")
+    st.write("Click the button below to receive a compliment!")
+
+    # Button to generate compliment
+    if st.button("Generate Compliment"):
+        compliment = generate_compliment()
+        st.write(f"🌟 {compliment}")
+ # Title and description for sign-up
     st.title("Sign up for Daily Compliments")
     st.write("Enter your name and email address to receive daily compliments!")
 
@@ -24,19 +36,8 @@ def main():
         save_to_database(name, email)
         st.success("You've successfully signed up for daily compliments!")
 
-    # Separator
-    st.markdown("---")
-
-    # Title and description for generating compliments
-    st.title("Compli-Matic 🌟")
-    st.subheader("Because You Deserve a Daily Dose of Encouragement!")
-    st.write("Click the button below to receive a compliment!")
-
-    # Button to generate compliment
-    if st.button("Generate Compliment"):
-        compliment = generate_compliment()
-        st.write(f"🌟 {compliment}")
-
+   
+    
     # Built by information
     st.markdown("<h4 style='text-align: center; font-size: small;'>Built by <a href='https://www.linkedin.com/in/harshal-panchal/' target='_blank'>Harshal Panchal</a></h4>", unsafe_allow_html=True)
 
