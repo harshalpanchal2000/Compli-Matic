@@ -33,6 +33,8 @@ def generate_compliment():
 # Main Streamlit app
 def main():
     st.title("Compli-Matic")
+    st.subheader("Because You Deserve a Daily Dose of Encouragement!")
+    st.markdown("<h3 style='text-align: center;'>Built by <a href='https://www.linkedin.com/in/harshal-panchal/' target='_blank'>Harshal Panchal</a></h3>", unsafe_allow_html=True)
 
     st.write("Click the button below to receive a compliment!")
 
