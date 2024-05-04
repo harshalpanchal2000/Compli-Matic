@@ -15,34 +15,28 @@ def main():
     st.subheader("Because You Deserve a Daily Dose of Encouragement!")
     st.write("Click the button below to receive a compliment!")
 
-    # Button to generate compliment
-    if st.button("Generate Compliment", key="generate_button", help="Click to generate compliment", 
-                  help_tooltip="Generate a random compliment", 
-                  onclick="console.log('Button clicked')", 
-                  key_down="Shift"):
+    # Button to generate compliment with yellow background and white text
+    if st.button("Generate Compliment", key="generate_button", help="Click to generate compliment"):
         compliment = generate_compliment()
         st.write(f"🌟 {compliment}")
 
+    # Separator
+    st.markdown("---")
 
-        # Title and description for sign-up
+    # Title and description for sign-up
     st.markdown("<h2 style='font-size: 24px;'>Sign up for Daily Compliments</h2>", unsafe_allow_html=True)
     st.markdown("<p style='font-size: 16px;'>Enter your name and email address to receive daily compliments!</p>", unsafe_allow_html=True)
-    
+
     # User input fields for sign-up
     name = st.text_input("Name")
     email = st.text_input("Email")
-    
-      # Sign-up button
-    if st.button("Sign Up", key="signup_button", help="Click to sign up", 
-                  help_tooltip="Sign up for receiving daily compliments", 
-                  onclick="console.log('Button clicked')", 
-                  key_down="Shift"):
+
+    # Sign-up button with yellow background and white text
+    if st.button("Sign Up", key="signup_button", help="Click to sign up"):
         # Save user sign-up data to database (placeholder)
         save_to_database(name, email)
         st.success("You've successfully signed up for daily compliments!")
-    
- 
-    
+
     # Built by information
     st.markdown("<h4 style='text-align: center; font-size: small;'>Built by <a href='https://www.linkedin.com/in/harshal-panchal/' target='_blank'>Harshal Panchal</a></h4>", unsafe_allow_html=True)
 
