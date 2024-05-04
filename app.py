@@ -34,13 +34,14 @@ def generate_compliment():
 def main():
     st.title("Compli-Matic")
     st.subheader("Because You Deserve a Daily Dose of Encouragement!")
+
     st.write("Click the button below to receive a compliment!")
 
     if st.button("Generate Compliment"):
         compliment = generate_compliment()
         st.write(f"🌟 {compliment}")
 
-st.markdown("<h3 style='text-align: center;'>Built by <a href='https://www.linkedin.com/in/harshal-panchal/' target='_blank'>Harshal Panchal</a></h3>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; font-size: small;'>Built by <a href='https://www.linkedin.com/in/harshal-panchal/' target='_blank'>Harshal Panchal</a></h4>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
