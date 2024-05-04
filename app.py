@@ -19,7 +19,7 @@ def main():
     st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
 
     # Button to generate compliment
-    if st.button("Generate Compliment"):
+    if st.button("Generate Compliment", key="generate_button", help="Click to generate compliment"):
         compliment = generate_compliment()
         st.write(f"🌟 {compliment}")
 
