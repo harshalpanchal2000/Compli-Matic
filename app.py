@@ -1,9 +1,6 @@
 import streamlit as st
 import random
 
-# Set page title
-st.title("Compli-Matic 🌟")
-
 # Set Page Configuration
 st.set_page_config(
     page_title="Compli-Matic: Because You Deserve a Daily Dose of Encouragement!",
