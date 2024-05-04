@@ -20,13 +20,13 @@ def main():
         compliment = generate_compliment()
         st.write(f"🌟 {compliment}")
 
-    # Title and description for sign-up
-st.markdown("<h2 style='font-size: 24px;'>Sign up for Daily Compliments</h2>", unsafe_allow_html=True)
-st.markdown("<p style='font-size: 16px;'>Enter your name and email address to receive daily compliments!</p>", unsafe_allow_html=True)
-
-# User input fields for sign-up
-name = st.text_input("Name")
-email = st.text_input("Email")
+        # Title and description for sign-up
+    st.markdown("<h2 style='font-size: 24px;'>Sign up for Daily Compliments</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 16px;'>Enter your name and email address to receive daily compliments!</p>", unsafe_allow_html=True)
+    
+    # User input fields for sign-up
+    name = st.text_input("Name")
+    email = st.text_input("Email")
 
     # Sign-up button
     if st.button("Sign Up"):
