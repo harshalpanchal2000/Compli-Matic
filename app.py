@@ -12,7 +12,7 @@ def main():
 
     # Title and description for generating compliments
     st.markdown("<h1 style='text-align: center;'>Compli-Matic 🌟</h1>", unsafe_allow_html=True)
-    st.subheader("Because You Deserve a Daily Dose of Encouragement!")
+    st.subheader("<h2 style='text-align: center;'>Because You Deserve a Daily Dose of Encouragement!</h2>")
     st.write("Click the button below to receive a compliment!")
 
     # Button to generate compliment
