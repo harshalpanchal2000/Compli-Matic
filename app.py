@@ -52,7 +52,6 @@ def main():
 
     st.markdown("<h4 style='text-align: center; font-size: small;'>Built by <a href='https://www.linkedin.com/in/harshal-panchal/' target='_blank'>Harshal Panchal</a></h4>", unsafe_allow_html=True)
     
-    st.markdown("---")  # Add a horizontal line to separate the content
     
 if __name__ == "__main__":
     main()
