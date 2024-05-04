@@ -32,6 +32,9 @@ compliments = [
     "You're fantastic!"
 ]
 
+# Set page title
+st.title("Compli-Matic 🌟")
+
 # Function to generate a random compliment
 def generate_compliment():
     compliment = random.choice(compliments)
