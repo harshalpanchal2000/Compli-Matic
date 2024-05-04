@@ -13,7 +13,7 @@ def main():
     # Title and description for generating compliments
     st.markdown("<h1 style='text-align: center;'>Compli-Matic 🌟</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center;'>Because You Deserve a Daily Dose of Encouragement!</h2>", unsafe_allow_html=True)
-    st.markdownw("<h4 style='text-align:center;'>Click the button below to receive a compliment!"</h4>, unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align:center;'>Click the button below to receive a compliment!"</h4>", unsafe_allow_html=True)
 
     # Center-aligning button container
     st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
