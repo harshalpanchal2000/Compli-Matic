@@ -1,6 +1,13 @@
 import streamlit as st
 import random
 
+# Set page configuration
+st.set_page_config(
+    page_title="Compli-Matic 🌟",
+    layout="centered",
+    menu=None
+)
+
 # List of compliments
 compliments = [
     "You're a ray of sunshine on a cloudy day!",
@@ -32,7 +39,7 @@ def generate_compliment():
 
 # Main Streamlit app
 def main():
-    st.title("Compli-Matic")
+    st.title("Compli-Matic 🌟")
     st.subheader("Because You Deserve a Daily Dose of Encouragement!")
 
     st.write("Click the button below to receive a compliment!")
@@ -42,6 +49,8 @@ def main():
         st.write(f"🌟 {compliment}")
 
     st.markdown("<h4 style='text-align: center; font-size: small;'>Built by <a href='https://www.linkedin.com/in/harshal-panchal/' target='_blank'>Harshal Panchal</a></h4>", unsafe_allow_html=True)
-
+    
+    st.markdown("---")  # Add a horizontal line to separate the content
+    
 if __name__ == "__main__":
     main()
