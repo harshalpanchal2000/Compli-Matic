@@ -1,12 +1,8 @@
 import streamlit as st
 import random
 
-# Set page configuration
-st.set_page_config(
-    page_title="Compli-Matic 🌟",
-    layout="centered",
-    menu=None
-)
+# Set page title
+st.title("Compli-Matic 🌟")
 
 # List of compliments
 compliments = [
@@ -39,7 +35,6 @@ def generate_compliment():
 
 # Main Streamlit app
 def main():
-    st.title("Compli-Matic 🌟")
     st.subheader("Because You Deserve a Daily Dose of Encouragement!")
 
     st.write("Click the button below to receive a compliment!")
