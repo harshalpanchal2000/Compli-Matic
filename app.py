@@ -16,7 +16,8 @@ def main():
     st.write("Click the button below to receive a compliment!")
 
     # Button to generate compliment with yellow background and white text
-    if st.button("Generate Compliment", key="generate_button", help="Click to generate compliment"):
+    if st.button("Generate Compliment", key="generate_button", help="Click to generate compliment", 
+                 style={"background-color": "yellow", "color": "white"}):
         compliment = generate_compliment()
         st.write(f"🌟 {compliment}")
 
@@ -32,7 +33,8 @@ def main():
     email = st.text_input("Email")
 
     # Sign-up button with yellow background and white text
-    if st.button("Sign Up", key="signup_button", help="Click to sign up"):
+    if st.button("Sign Up", key="signup_button", help="Click to sign up", 
+                 style={"background-color": "yellow", "color": "white"}):
         # Save user sign-up data to database (placeholder)
         save_to_database(name, email)
         st.success("You've successfully signed up for daily compliments!")
