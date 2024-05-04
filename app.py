@@ -1,7 +1,5 @@
 import streamlit as st
-import random
 
-# Streamlit app to collect user sign-up data and generate compliments
 def main():
     # Set Page Configuration
     st.set_page_config(
@@ -15,16 +13,26 @@ def main():
     st.markdown("<h3 style='text-align: center;'>Because You Deserve a Daily Dose of Encouragement!</h3>", unsafe_allow_html=True)
     st.markdown("<p style='text-align:center;'>Click the button below to receive a compliment!</p>", unsafe_allow_html=True)
 
-    # Center-aligning button container
-    st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+    # Layout with 5 columns
+    col1, col2, col3, col4, col5 = st.beta_columns(5)
 
-    # Button to generate compliment
-    if st.button("Generate Compliment", key="generate_button", help="Click to generate compliment"):
-        compliment = generate_compliment()
-        st.write(f"🌟 {compliment}")
+    # Place empty columns in col1, col2, col4, col5
+    with col1:
+        pass
+    with col2:
+        pass
+    with col4:
+        pass
+    with col5:
+        pass
 
-    # Close button alignment container
-    st.markdown("</div>", unsafe_allow_html=True)
+    # Place button in col3
+    with col3:
+        center_button = st.button('Generate Compliment', key="generate_button", help="Click to generate compliment")
+
+        if center_button:
+            compliment = generate_compliment()
+            st.write(f"🌟 {compliment}")
 
     # Separator
     st.markdown("---")
